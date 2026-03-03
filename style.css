@@ -204,6 +204,18 @@ nav a:hover {
     background-color: #f9f9f9;
 }
 
+/* Resaltar los nombres en la tabla */
+.tabla-ajolotes td:first-child {
+    color: #21867a;
+    font-weight: 600;
+}
+
+/* Efecto al pasar el mouse sobre la fila */
+.tabla-ajolotes tr:hover {
+    background-color: #e9f5f5;
+    transition: background 0.2s;
+}
+
 /* ===== FOOTER / CONSERVACIÓN ===== */
 footer {
     background-color: #1a1a1a;
