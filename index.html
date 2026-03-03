@@ -2,154 +2,210 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <title>Tipos de Ajolotes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axolotl: El Guardián de Xochimilco</title>
 
-    <!-- Conexión al archivo CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;600&family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Montserrat:wght@300;400;600&family=Courier+Prime&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
 <header>
-    <h1>Tipos de Ajolotes</h1>
-    <p>Proyecto educativo sobre variedades del ajolote — información básica y fotos</p>
+    <h1>Ambystoma Mexicanum</h1>
+    <p>Guía Completa de Variedades, Genética y Conservación</p>
 </header>
 
-<!-- ===== NAVEGACIÓN SIMPLE ===== -->
 <nav>
-    <a href="#silvestre">Silvestre</a>
-    <a href="#leucistico">Leucístico</a>
-    <a href="#albino">Albino</a>
-    <a href="#melanico">Melánico</a>
-    <a href="#dorado">Dorado</a>
-    <a href="#mosaico">Mosaico</a>
-    <a href="#piebald">Piebald</a>
-    <a href="#copper">Copper</a>
-    <a href="#gfp">GFP / Firefly</a>
+    <a href="#inicio">Inicio</a>
+    <a href="#galeria">Variedades</a>
+    <a href="#comparativa">Tabla Genética</a>
+    <a href="#conservacion">Conservación</a>
 </nav>
 
-<!-- ===== MAIN GRID ===== -->
-<main class="contenedor">
+<section id="inicio" class="intro-container">
+    <div class="intro-content">
+        <h2>La Maravilla de la Neotenia</h2>
+        <p>El ajolote es un anfibio endémico del sistema lacustre del Valle de México. A diferencia de otros de su especie, el ajolote alcanza la vida adulta manteniendo sus rasgos de larva, como sus icónicas branquias externas que parecen un penacho.</p>
+        
+        
 
-    <!-- Cada sección/card incluye: imagen, subtítulo y lista simple de datos -->
-    <section class="card" id="silvestre">
-        <h2>Ajolote Silvestre (Wild-type)</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Axolotl_2015_G1.jpg"
-             alt="Ajolote silvestre" loading="lazy">
-        <p>Es la forma natural: tonos oscuros (marrón/verde) con motas doradas. Vive en lagos como Xochimilco.</p>
-        <ul>
-            <li><strong>Tamaño:</strong> 20–30 cm adulto</li>
-            <li><strong>Hábitat:</strong> agua dulce, vegetación densa</li>
-            <li><strong>Cuidado:</strong> requiere tanque espacioso y agua limpia</li>
-        </ul>
-    </section>
+        <div class="grid-info-rapida">
+            <div class="dato"><strong>Reino:</strong> Animalia</div>
+            <div class="dato"><strong>Clase:</strong> Amphibia</div>
+            <div class="dato"><strong>Estado:</strong> Peligro Crítico</div>
+        </div>
+    </div>
+</section>
 
-    <section class="card" id="leucistico">
+<main id="galeria" class="contenedor">
+
+    <article class="card" id="silvestre">
+        <div class="tag-comun">Ancestral</div>
+        <h2>Silvestre (Wild Type)</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Axolotl_2015_G1.jpg" alt="Ajolote silvestre">
+        <div class="card-body">
+            <p>Es el fenotipo original. Su coloración es una mezcla de verde oliva, gris y negro con puntos iridiscentes dorados.</p>
+            <ul>
+                <li><strong>Ojos:</strong> Negros con anillo dorado.</li>
+                <li><strong>Hábitat:</strong> Canales profundos con sombra.</li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="card" id="leucistico">
+        <div class="tag-popular">Más Popular</div>
         <h2>Leucístico</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Axolotl_Leucistic.jpg"
-             alt="Ajolote leucístico" loading="lazy">
-        <p>Piel pálida / rosada con ojos oscuros. Muy popular en acuarios.</p>
-        <ul>
-            <li><strong>Nota:</strong> no es albino (sus ojos son oscuros)</li>
-            <li><strong>Comportamiento:</strong> igual al wild-type</li>
-            <li><strong>Consejo:</strong> evita luz directa intensa</li>
-        </ul>
-    </section>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Axolotl_Leucistic.jpg" alt="Ajolote leucístico">
+        <div class="card-body">
+            <p>Frecuentemente confundido con el albino. Tiene piel rosada blanca pero mantiene sus ojos negros o azules oscuros.</p>
+            <ul>
+                <li><strong>Genética:</strong> Mutación recesiva.</li>
+                <li><strong>Rasgo:</strong> Branquias rojo intenso.</li>
+            </ul>
+        </div>
+    </article>
 
-    <section class="card" id="albino">
-        <h2>Albino</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Albino_Axolotl.jpg"
-             alt="Ajolote albino" loading="lazy">
-        <p>Carece de melanina; piel muy clara y ojos rosados/rojizos.</p>
-        <ul>
-            <li><strong>Sensibilidad:</strong> más sensible a la luz</li>
-            <li><strong>Atención:</strong> esconderijos y sustrato suave</li>
-            <li><strong>Alimentación:</strong> alimentación rica en proteínas (lombrices, pellets)</li>
-        </ul>
-    </section>
+    <article class="card" id="albino">
+        <h2>Albino Blanco</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Albino_Axolotl.jpg" alt="Ajolote albino">
+        <div class="card-body">
+            <p>Carece totalmente de pigmento oscuro. Sus ojos son claros o rojizos, lo que los hace muy sensibles a la luz UV.</p>
+            <ul>
+                <li><strong>Cuidado:</strong> Requiere mucha sombra.</li>
+                <li><strong>Dato:</strong> Branquias muy rosadas.</li>
+            </ul>
+        </div>
+    </article>
 
-    <section class="card" id="melanico">
-        <h2>Melánico / Melánico oscuro</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Axolotl_black.jpg"
-             alt="Ajolote melánico" loading="lazy">
-        <p>Coloración muy oscura (negro o gris profundo). A veces llamado melánico.</p>
-        <ul>
-            <li><strong>Camuflaje:</strong> buena adaptación en acuarios oscuros</li>
-            <li><strong>Genética:</strong> provoca ausencia de iridóforos</li>
-            <li><strong>Cuidados:</strong> igual que otros, controlar parámetros del agua</li>
-        </ul>
-    </section>
+    <article class="card" id="melanico">
+        <h2>Melánico</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Axolotl_black.jpg" alt="Ajolote melánico">
+        <div class="card-body">
+            <p>Posee un exceso de melanóforos y una ausencia total de iridóforos, dándole un tono gris oscuro o negro mate.</p>
+            <ul>
+                <li><strong>Piel:</strong> Sin brillo metálico.</li>
+                <li><strong>Ojos:</strong> Negros sólidos.</li>
+            </ul>
+        </div>
+    </article>
 
-    <section class="card" id="dorado">
-        <h2>Dorado / Golden Albino</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Golden_Axolotl.jpg"
-             alt="Ajolote dorado" loading="lazy">
-        <p>Tonos amarillos/dorados brillantes. Muy vistoso y demandado en acuarios.</p>
-        <ul>
-            <li><strong>Color cambiante:</strong> a veces se intensifica con la edad</li>
-            <li><strong>Iluminación:</strong> moderada — evita LED muy fuertes</li>
-            <li><strong>Salud:</strong> revisar ojos y garras periódicamente</li>
-        </ul>
-    </section>
+    <article class="card" id="dorado">
+        <h2>Dorado (Golden)</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Golden_Axolotl.jpg" alt="Ajolote dorado">
+        <div class="card-body">
+            <p>Una variante de albino que retiene los pigmentos amarillos (xantóforos). Brillan como si fueran de oro bajo el agua.</p>
+            <ul>
+                <li><strong>Color:</strong> Amarillo vibrante.</li>
+                <li><strong>Juveniles:</strong> Nacen casi blancos.</li>
+            </ul>
+        </div>
+    </article>
 
-    <section class="card" id="mosaico">
+    <article class="card" id="mosaico">
+        <div class="tag-raro">Raro</div>
         <h2>Mosaico</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Mosaic_Axolotl.jpg"
-             alt="Ajolote mosaico" loading="lazy">
-        <p>Patrones irregulares combinando varias variantes (cada ejemplar único).</p>
-        <ul>
-            <li><strong>Patrones:</strong> mezcla de colores y manchas</li>
-            <li><strong>Genética:</strong> resultado de múltiples alelos</li>
-            <li><strong>Curiosidad:</strong> no hay dos iguales</li>
-        </ul>
-    </section>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Mosaic_Axolotl.jpg" alt="Ajolote mosaico">
+        <div class="card-body">
+            <p>Resultado de dos huevos que se fusionan en uno solo. Presentan manchas blancas y negras distribuidas al azar.</p>
+            <ul>
+                <li><strong>Único:</strong> No hay dos iguales.</li>
+                <li><strong>Rareza:</strong> Accidente genético.</li>
+            </ul>
+        </div>
+    </article>
 
-    <section class="card" id="piebald">
-        <h2>Piebald</h2>
-        <img src="https://cf.ltkcdn.net/reptiles/amphibians-and-other-species/images/slide/324591-850x566-ambystoma-mexicanum-f-leucistic-axolotl.jpg"
-             alt="Ajolote piebald / parcheado" loading="lazy">
-        <p>Presenta parches oscuros sobre piel clara (contraste marcado).</p>
-        <ul>
-            <li><strong>Riesgo:</strong> puede oscurecer con el tiempo</li>
-            <li><strong>Observación:</strong> vigilar pigmentación en crecimiento</li>
-        </ul>
-    </section>
-
-    <section class="card" id="copper">
+    <article class="card" id="copper">
         <h2>Copper (Cobre)</h2>
-        <img src="https://cf.ltkcdn.net/reptiles/amphibians-and-other-species/images/slide/324584-850x566-axolotl-mexican.jpg"
-             alt="Ajolote copper" loading="lazy">
-        <p>Tonalidades rojizas / cobrizas provocadas por variantes genéticas.</p>
-        <ul>
-            <li><strong>Apariencia:</strong> cálida, con reflejos rojizos</li>
-            <li><strong>Cuidado:</strong> igual que otras variantes</li>
-        </ul>
-    </section>
+        <img src="https://cf.ltkcdn.net/reptiles/amphibians-and-other-species/images/slide/324584-850x566-axolotl-mexican.jpg" alt="Ajolote copper">
+        <div class="card-body">
+            <p>Una forma de albinismo más suave. Tienen un tono café canela y pecas oscuras por todo el cuerpo.</p>
+            <ul>
+                <li><strong>Ojos:</strong> Rojo oscuro/tintos.</li>
+                <li><strong>Origen:</strong> Cruzas seleccionadas.</li>
+            </ul>
+        </div>
+    </article>
 
-    <section class="card" id="gfp">
-        <h2>GFP / Firefly (transgénico)</h2>
-        <img src="https://axolotlplanet.com/products/gfp-wild-type-axolotl.jpg"
-             alt="Ajolote GFP / fluorescente" loading="lazy">
-        <p>Algunos ejemplares (de laboratorio o criaderos especializados) expresan GFP y brillan bajo luz UV.</p>
-        <ul>
-            <li><strong>Nota ética:</strong> suelen ser crías de proyectos científicos o criaderos especializados</li>
-            <li><strong>Exhibición:</strong> solo con luz negra para ver fluorescencia</li>
-            <li><strong>Recomendación:</strong> consultar normativa local antes de adquirir</li>
-        </ul>
-    </section>
+    <article class="card" id="enigma">
+        <div class="tag-raro">Extremo</div>
+        <h2>Enigma</h2>
+        <img src="https://i.pinimg.com/originals/81/2a/3e/812a3e6141444399e710b80985c7066d.jpg" alt="Ajolote Enigma">
+        <div class="card-body">
+            <p>Cuerpo gris carbón con parches blancos brillantes que parecen estrellas. Es de las mutaciones más costosas.</p>
+            <ul>
+                <li><strong>Origen:</strong> Criaderos de EE.UU.</li>
+                <li><strong>Visto:</strong> Por primera vez en 2010.</li>
+            </ul>
+        </div>
+    </article>
 
+    <article class="card" id="gfp">
+        <div class="tag-ciencia">Transgénico</div>
+        <h2>GFP / Firefly</h2>
+        <img src="https://axolotlplanet.com/products/gfp-wild-type-axolotl.jpg" alt="Ajolote GFP">
+        <div class="card-body">
+            <p>Modificados con una proteína de medusa. Los Firefly tienen la cola de una variedad y el cuerpo de otra.</p>
+            <ul>
+                <li><strong>Efecto:</strong> Brillan bajo luz UV.</li>
+                <li><strong>Laboratorio:</strong> Usados en rastreo celular.</li>
+            </ul>
+        </div>
+    </article>
 </main>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-    <p>© 2026 Proyecto de HTML y CSS | Ajolotes — Información educativa. Fotos: fuentes públicas (Wikimedia / guías).</p>
+<section id="comparativa" class="seccion-tabla">
+    <div class="contenedor-chico">
+        <h2>Resumen Genético</h2>
+        <table class="tabla-ajolotes">
+            <thead>
+                <tr>
+                    <th>Variante</th>
+                    <th>Color de Ojos</th>
+                    <th>Pigmentos</th>
+                    <th>Rareza</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Silvestre</td>
+                    <td>Negro/Oro</td>
+                    <td>Todos</td>
+                    <td>Baja</td>
+                </tr>
+                <tr>
+                    <td>Albino</td>
+                    <td>Rojo/Rosa</td>
+                    <td>Ninguno</td>
+                    <td>Media</td>
+                </tr>
+                <tr>
+                    <td>Mosaico</td>
+                    <td>Variable</td>
+                    <td>Mezclados</td>
+                    <td>Muy Alta</td>
+                </tr>
+                <tr>
+                    <td>Copper</td>
+                    <td>Vino</td>
+                    <td>Feomelanina</td>
+                    <td>Alta</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<footer id="conservacion">
+    <div class="footer-content">
+        <h3>¡Ayuda a su conservación!</h3>
+        <p>El ajolote está en peligro crítico de extinción debido a la contaminación y especies invasoras. Proyectos como <em>"Adoptaxolotl"</em> buscan restaurar su hogar en Xochimilco.</p>
+        <hr>
+        <p>© 2026 - Proyecto Educativo de Cultura Digital | Estudiante Avanzado</p>
+    </div>
 </footer>
 
-<!-- FIN -->
 </body>
 </html>
