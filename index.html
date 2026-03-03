@@ -4,145 +4,80 @@
     <meta charset="UTF-8">
     <title>Tipos de Ajolotes</title>
 
+    <!-- Conexión al archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&family=Courier+Prime&display=swap" rel="stylesheet">
-
-    <style>
-        /* ===== BODY ===== */
-        body {
-            margin: 0;
-            background-color: #f4f9f9;
-            font-family: "Montserrat", sans-serif;
-            color: #333;
-        }
-
-        /* ===== HEADER ===== */
-        header {
-            background: linear-gradient(135deg, #2a9d8f, #21867a);
-            color: white;
-            text-align: center;
-            padding: 30px;
-            font-family: "Playfair Display", serif;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
-
-        /* ===== CONTENEDOR ===== */
-        .contenedor {
-            width: 90%;
-            max-width: 1100px;
-            margin: 30px auto;
-        }
-
-        /* ===== TARJETAS ===== */
-        .card {
-            background-color: white;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 25px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease;
-        }
-
-        .card:hover {
-            transform: scale(1.02);
-        }
-
-        .card h2 {
-            color: #2a9d8f;
-            margin-top: 0;
-        }
-
-        .card img {
-            width: 100%;
-            max-height: 250px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-family: "Courier Prime", monospace;
-            margin-top: 40px;
-        }
-    </style>
 </head>
 <body>
 
 <header>
     <h1>Tipos de Ajolotes</h1>
-    <p>Descubre las diferentes variedades de este increíble anfibio mexicano</p>
+    <p>Proyecto educativo sobre variedades del ajolote</p>
 </header>
 
-<div class="contenedor">
+<nav>
+    <a href="#silvestre">Silvestre</a>
+    <a href="#leucistico">Leucístico</a>
+    <a href="#albino">Albino</a>
+    <a href="#melanico">Melánico</a>
+    <a href="#dorado">Dorado</a>
+    <a href="#mosaico">Mosaico</a>
+</nav>
 
-    <div class="card">
+<main class="contenedor">
+
+    <section class="card" id="silvestre">
         <h2>Ajolote Silvestre</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Axolotl_2015_G1.jpg">
         <p>
-            Es la forma natural del ajolote. Tiene colores oscuros como marrón, gris o negro con manchas.
-            Vive principalmente en Xochimilco, México. Actualmente está en peligro crítico de extinción.
+            Es la forma natural del ajolote. Tiene colores oscuros como gris o marrón.
+            Vive en Xochimilco, México, y está en peligro crítico de extinción.
         </p>
-    </div>
+    </section>
 
-    <div class="card">
+    <section class="card" id="leucistico">
         <h2>Ajolote Leucístico</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Axolotl_Leucistic.jpg">
         <p>
-            De piel blanca o rosada con ojos negros. Es el más popular como mascota debido a su apariencia tierna.
-            No es albino, ya que sí produce melanina.
+            De piel blanca o rosada con ojos negros.
+            Es el más común en acuarios.
         </p>
-    </div>
+    </section>
 
-    <div class="card">
+    <section class="card" id="albino">
         <h2>Ajolote Albino</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Albino_Axolotl.jpg">
         <p>
-            Tiene piel clara y ojos rojos. Carece completamente de melanina.
-            Es menos común que el leucístico.
+            Tiene ojos rojos y carece completamente de melanina.
         </p>
-    </div>
+    </section>
 
-    <div class="card">
+    <section class="card" id="melanico">
         <h2>Ajolote Melánico</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Axolotl_black.jpg">
         <p>
-            Presenta un color negro intenso. Esta variante genética produce una pigmentación oscura uniforme.
+            Presenta un color negro intenso debido a una alta pigmentación.
         </p>
-    </div>
+    </section>
 
-    <div class="card">
+    <section class="card" id="dorado">
         <h2>Ajolote Dorado</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Golden_Axolotl.jpg">
         <p>
-            Variante albina con tonalidades doradas o amarillas brillantes.
-            Es muy llamativo y apreciado en acuarios.
+            Variante albina con tonos amarillos brillantes.
         </p>
-    </div>
+    </section>
 
-    <div class="card">
+    <section class="card" id="mosaico">
         <h2>Ajolote Mosaico</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Mosaic_Axolotl.jpg">
         <p>
-            Presenta una combinación de colores en patrones únicos.
-            Cada ejemplar mosaico es diferente, lo que los hace especiales.
+            Tiene patrones únicos combinando varios colores.
         </p>
-    </div>
+    </section>
 
-</div>
+</main>
 
 <footer>
-    <p>© 2026 Información educativa sobre ajolotes | Diseñado en HTML y CSS</p>
+    <p>© 2026 Proyecto de HTML y CSS | Ajolotes</p>
 </footer>
 
 </body>
