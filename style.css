@@ -1,6 +1,4 @@
 /* ===== CONFIGURACIÓN GENERAL ===== */
-
-/* scroll suave para los enlaces internos */
 html {
     scroll-behavior: smooth;
 }
@@ -10,8 +8,7 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: #f4f9f9;
     color: #333;
-    line-height: 1.45;
-    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
 }
 
 /* ===== HEADER ===== */
@@ -19,162 +16,230 @@ header {
     background: linear-gradient(135deg, #2a9d8f, #21867a);
     color: white;
     text-align: center;
-    padding: 28px 16px;
+    padding: 50px 20px;
     font-family: "Playfair Display", serif;
 }
 
-/* título grande y claro */
 header h1 {
-    margin: 0 0 6px 0;
-    font-size: 36px;
-    letter-spacing: 0.5px;
+    margin: 0;
+    font-size: 42px;
+    letter-spacing: 1px;
 }
 
 header p {
-    margin: 0;
+    margin-top: 10px;
     font-weight: 300;
+    opacity: 0.9;
 }
 
-/* ===== NAV ===== */
+/* ===== NAVEGACIÓN (Sticky con efecto Blur) ===== */
 nav {
-    background-color: #1f6f66;
+    background-color: rgba(31, 111, 102, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: sticky;
     top: 0;
-    z-index: 5;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* enlaces simples y legibles para principiantes */
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
     font-weight: 600;
     font-size: 14px;
-    display: inline-block;
-    padding: 6px 8px;
-    border-radius: 6px;
-    transition: background 0.18s, transform 0.12s;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    background: rgba(255, 209, 102, 0.12);
-    transform: translateY(-2px);
     color: #ffd166;
 }
 
-/* ===== CONTENEDOR GRID ===== */
-/* grid responsive con columnas que se adaptan */
+/* ===== SECCIÓN INTRODUCCIÓN ===== */
+.intro-container {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-content h2 {
+    color: #2a9d8f;
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+}
+
+/* Grid de Información Rápida */
+.grid-info-rapida {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.dato {
+    background: #e9f5f5;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+    border: 1px solid #2a9d8f;
+}
+
+/* ===== CONTENEDOR DE TARJETAS ===== */
 .contenedor {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    width: 92%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    width: 90%;
     max-width: 1200px;
-    margin: 28px auto;
-    padding-bottom: 18px;
+    margin: 40px auto;
 }
 
-/* ===== TARJETAS ===== */
+/* ===== TARJETAS (CARDS) ===== */
 .card {
     background-color: white;
-    padding: 16px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-/* efecto sutil al pasar el cursor */
 .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
 }
 
-/* título en color para destacar (fácil de cambiar) */
-.card h2 {
-    color: #2a9d8f;
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 20px;
-}
-
-/* ===== IMÁGENES (borde ligeramente redondeado, visible) ===== */
-/* se aplica a las imágenes dentro de las tarjetas */
 .card img {
     width: 100%;
-    max-height: 220px;
+    height: 220px;
     object-fit: cover;
-    display: block;
-    margin-bottom: 12px;
-    border-radius: 8px;                /* poco redondeado */
-    border: 2px solid rgba(42,157,143,0.12);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: transform 0.5s ease;
 }
 
-/* párrafos y listas con buena lectura */
-.card p {
-    margin: 0 0 8px 0;
-    font-size: 15px;
-    color: #3a3a3a;
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card h2 {
+    color: #2a9d8f;
+    font-size: 22px;
+    margin-top: 0;
 }
 
 .card ul {
-    padding-left: 18px;
-    margin: 6px 0 0 0;
-    color: #444;
+    padding-left: 20px;
     font-size: 14px;
+    color: #555;
 }
 
-/* ===== FOOTER ===== */
-footer {
-    background-color: #222;
+/* ===== ETIQUETAS (TAGS) ===== */
+[class^="tag-"] {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
     color: white;
+    letter-spacing: 0.5px;
+}
+
+.tag-comun { background: #6c757d; }
+.tag-popular { background: #2a9d8f; }
+.tag-raro { background: #e76f51; }
+.tag-ciencia { background: #8338ec; }
+
+/* ===== TABLA COMPARATIVA ===== */
+.seccion-tabla {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+.contenedor-chico {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tabla-ajolotes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background: white;
+}
+
+.tabla-ajolotes th, .tabla-ajolotes td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-ajolotes th {
+    background-color: #1f6f66;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.tabla-ajolotes tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* ===== FOOTER / CONSERVACIÓN ===== */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 20px;
     text-align: center;
-    padding: 16px;
-    font-family: "Courier Prime", monospace;
-    margin-top: 28px;
-    font-size: 14px;
 }
 
-/* ===== MODO OSCURO AUTOMÁTICO ===== */
-/* sistema respeta preferencia del usuario */
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    color: #ffd166;
+    margin-bottom: 15px;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+}
+
+/* ===== MODO OSCURO (PREFERS-COLOR-SCHEME) ===== */
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #0f1112;
-        color: #e6e6e6;
-    }
-
-    header {
-        background: linear-gradient(135deg, #165a53, #153f3a);
-    }
-
-    nav {
-        background-color: #0f3f3a;
-    }
-
-    .card {
-        background-color: #121416;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.65);
-    }
-
-    .card p, .card ul {
-        color: #dcdcdc;
-    }
-
-    footer {
-        background-color: #080808;
-    }
-
-    .card img {
-        border: 2px solid rgba(255,255,255,0.04);
-    }
+    body { background-color: #0f1112; color: #e0e0e0; }
+    .intro-container, .seccion-tabla { background-color: #16181a; }
+    .card { background-color: #1c1f22; }
+    .card-body p, .card ul { color: #bbb; }
+    .dato { background: #1f2a2a; color: #fff; }
+    .tabla-ajolotes { color: #333; } /* Mantiene la tabla legible */
+    .tabla-ajolotes tr:hover { background-color: #25282b; color: #fff; }
 }
 
-/* ===== ESTILOS RESPONSIVOS BÁSICOS ===== */
-@media (max-width: 520px) {
-    header h1 { font-size: 28px; }
-    nav a { margin: 6px 6px; font-size: 13px; }
-    .card img { max-height: 180px; }
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    header h1 { font-size: 30px; }
+    .grid-info-rapida { flex-direction: column; }
+    nav a { margin: 0 5px; font-size: 12px; }
+    .tabla-ajolotes { font-size: 12px; }
 }
