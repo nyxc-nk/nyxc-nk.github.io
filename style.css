@@ -1,4 +1,3 @@
-/* ===== CONFIGURACIÓN GENERAL ===== */
 html {
     scroll-behavior: smooth;
 }
@@ -11,7 +10,6 @@ body {
     line-height: 1.6;
 }
 
-/* ===== HEADER ===== */
 header {
     background: linear-gradient(135deg, #2a9d8f, #21867a);
     color: white;
@@ -32,7 +30,6 @@ header p {
     opacity: 0.9;
 }
 
-/* ===== NAVEGACIÓN (Sticky con efecto Blur) ===== */
 nav {
     background-color: rgba(31, 111, 102, 0.95);
     backdrop-filter: blur(10px);
@@ -58,7 +55,6 @@ nav a:hover {
     color: #ffd166;
 }
 
-/* ===== SECCIÓN INTRODUCCIÓN ===== */
 .intro-container {
     background-color: white;
     padding: 60px 20px;
@@ -76,7 +72,6 @@ nav a:hover {
     font-size: 32px;
 }
 
-/* Grid de Información Rápida */
 .grid-info-rapida {
     display: flex;
     justify-content: center;
@@ -93,7 +88,6 @@ nav a:hover {
     border: 1px solid #2a9d8f;
 }
 
-/* ===== CONTENEDOR DE TARJETAS ===== */
 .contenedor {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -103,7 +97,6 @@ nav a:hover {
     margin: 40px auto;
 }
 
-/* ===== TARJETAS (CARDS) ===== */
 .card {
     background-color: white;
     border-radius: 15px;
@@ -149,7 +142,6 @@ nav a:hover {
     color: #555;
 }
 
-/* ===== ETIQUETAS (TAGS) ===== */
 [class^="tag-"] {
     position: absolute;
     top: 10px;
@@ -170,7 +162,6 @@ nav a:hover {
 .tag-raro { background: #e76f51; }
 .tag-ciencia { background: #8338ec; }
 
-/* ===== TABLA COMPARATIVA ===== */
 .seccion-tabla {
     background-color: #fff;
     padding: 60px 20px;
@@ -204,19 +195,16 @@ nav a:hover {
     background-color: #f9f9f9;
 }
 
-/* Resaltar los nombres en la tabla */
 .tabla-ajolotes td:first-child {
     color: #21867a;
     font-weight: 600;
 }
 
-/* Efecto al pasar el mouse sobre la fila */
 .tabla-ajolotes tr:hover {
     background-color: #e9f5f5;
     transition: background 0.2s;
 }
 
-/* ===== FOOTER / CONSERVACIÓN ===== */
 footer {
     background-color: #1a1a1a;
     color: white;
@@ -240,18 +228,34 @@ footer hr {
     margin: 20px 0;
 }
 
-/* ===== MODO OSCURO (PREFERS-COLOR-SCHEME) ===== */
+.autores {
+    margin: 15px 0;
+    font-size: 15px;
+    color: #ffd166;
+}
+
+.autores span {
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.copyright {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 20px;
+    font-family: "Courier Prime", monospace;
+}
+
 @media (prefers-color-scheme: dark) {
     body { background-color: #0f1112; color: #e0e0e0; }
     .intro-container, .seccion-tabla { background-color: #16181a; }
     .card { background-color: #1c1f22; }
     .card-body p, .card ul { color: #bbb; }
     .dato { background: #1f2a2a; color: #fff; }
-    .tabla-ajolotes { color: #333; } /* Mantiene la tabla legible */
+    .tabla-ajolotes { color: #333; }
     .tabla-ajolotes tr:hover { background-color: #25282b; color: #fff; }
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
     header h1 { font-size: 30px; }
     .grid-info-rapida { flex-direction: column; }
